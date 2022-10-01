@@ -1,5 +1,5 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 import './TasksFilter.css'
 
@@ -26,7 +26,11 @@ const TasksFilter = (props) => {
 
 export default TasksFilter
 
-// TasksFilter.propTypes = {
-//   stateBtn: PropTypes.arrayOf(PropTypes.object),
-//   onFilter: PropTypes.func.isRequired,
-// }
+TasksFilter.propTypes = {
+  stateBtn: PropTypes.arrayOf(PropTypes.object),
+  activeFilter: PropTypes.string,
+}
+
+TasksFilter.defaultProps = {
+  activeFilter: 'all',
+}

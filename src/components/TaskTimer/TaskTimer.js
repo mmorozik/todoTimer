@@ -19,9 +19,10 @@ export default class TaskTimer extends Component {
       const dSecond = Math.floor((newDate - dateStart) / 1000)
       const time = this.props.timeComplited - dSecond
       this.formateSeconds(time)
+      if (time === 0) this.onStop()
       this.setState(() => {
         return {
-          time: time >= 1 ? time : 0,
+          time: time,
         }
       })
     }

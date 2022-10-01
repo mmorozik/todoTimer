@@ -1,5 +1,5 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 import './TaskList.css'
 
@@ -38,13 +38,11 @@ const TaskList = (props) => {
 
 export default TaskList
 
-// Task.defaultProps = {
-//   viewList: 'All',
-// }
-
-// TaskList.propTypes = {
-//   todos: PropTypes.arrayOf(PropTypes.object),
-//   onDeleted: PropTypes.func.isRequired,
-//   onComplited: PropTypes.func.isRequired,
-//   viewList: PropTypes.string,
-// }
+TaskList.propTypes = {
+  todoData: PropTypes.arrayOf(PropTypes.object),
+  doneTask: PropTypes.func.isRequired,
+  deleteTask: PropTypes.func.isRequired,
+  editTask: PropTypes.func.isRequired,
+  onEdit: PropTypes.func.isRequired,
+  setNewTimeComplited: PropTypes.func.isRequired,
+}

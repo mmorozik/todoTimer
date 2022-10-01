@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 import './NewTaskForm.css'
 
@@ -66,6 +66,6 @@ export default class NewTaskForm extends Component {
   }
 }
 
-// NewTaskForm.propTypes = {
-//   onItemAdded: PropTypes.func.isRequired,
-// }
+NewTaskForm.propTypes = {
+  addTask: PropTypes.func.isRequired,
+}

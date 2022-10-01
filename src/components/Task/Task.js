@@ -1,6 +1,5 @@
 import React from 'react'
-// import { formatDistanceToNow } from 'date-fns'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 import EditTaskForm from '../EditTaskForm/EditTaskForm'
 import TaskTimer from '../TaskTimer'
@@ -41,13 +40,12 @@ const Task = (props) => {
 
 export default Task
 
-// Task.defaultProps = {
-//   label: 'Not a label',
-//   dateNow: new Date(),
-// }
+Task.defaultProps = {
+  label: 'Not a label',
+  dateNow: new Date(),
+}
 
-// Task.propTypes = {
-//   label: PropTypes.string,
-//   onDeleted: PropTypes.func.isRequired,
-//   onComplited: PropTypes.func.isRequired,
-// }
+Task.propTypes = {
+  label: PropTypes.string,
+  edit: PropTypes.bool,
+}
