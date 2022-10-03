@@ -1,5 +1,4 @@
 import React from 'react'
-// import PropTyps from 'prop-types'
 
 import './Footer.css'
 
@@ -19,15 +18,3 @@ const Footer = (props) => {
 }
 
 export default Footer
-
-// Footer.propTyps = {
-//   count: PropTyps.number,
-//   stateBtn: PropTyps.arrayOf(PropTyps.object),
-//   onFilter: PropTyps.func.isRequired,
-//   onClear: PropTyps.func.isRequired,
-// }
-
-// Footer.defaultProps = {
-//   count: 0,
-//   stateBtn: [{}],
-// }
